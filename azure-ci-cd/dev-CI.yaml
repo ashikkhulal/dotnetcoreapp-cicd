@@ -8,7 +8,7 @@ jobs:
     name: Azure Pipelines
     vmImage: 'ubuntu-18.04'
     demands: java
- variables:
+  variables:
     BuildConfiguration: release
 
 steps:
