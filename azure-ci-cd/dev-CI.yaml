@@ -1,15 +1,12 @@
 trigger:
   - dev
 
-jobs:
-- job: WebApp
-  displayName: 'DotNet-Web-APP-CI'
-  pool:
-    name: Azure Pipelines
-    vmImage: 'ubuntu-18.04'
-    demands: java
-  variables:
-    BuildConfiguration: release
+pool:
+  name: Azure Pipelines
+  vmImage: 'ubuntu-18.04'
+  demands: java
+variables:
+  BuildConfiguration: release
 
 steps:
 - task: DotNetCoreCLI@2
